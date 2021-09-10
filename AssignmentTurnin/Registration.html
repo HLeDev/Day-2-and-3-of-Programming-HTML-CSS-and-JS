@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="RegCSS.css" />
+    <script type="text/javascript" src="JavaScript/Registration.js"></script>
+
+</head>
+<body onload="onload()">
+    <div class="container">
+        <div class="form-name">Sign up</div>
+        <div>
+            <form id="regist-form">
+                <!-- First Name -->
+                <div class="field-name-block">
+                    <label class="field-name">First Name</label>
+                </div>
+                <div class="field-input-block">
+                    <input id="fName" type="text" placeholder="First Name" maxlength="20" />
+                    <img src="Images/Important.png" id="fNameWarning" class="warning warning-hide" height="25" width="25" />
+                </div>
+
+                <!-- Last Name -->
+                <div class="field-name-block">
+                    <label class="field-name">Last Name</label>
+                </div>
+                <div class="field-input-block">
+                    <input id="lName" type="text" placeholder="Last Name" maxlength="20" />
+                    <img src="Images/Important.png" id="lNameWarning" class="warning warning-hide" height="25" width="25" />
+                </div>
+
+                <!-- Email -->
+                <div class="field-name-block">
+                    <label class="field-name">Email</label>
+                </div>
+                <div class="field-input-block">
+                    <input id="email" type="text" placeholder="email@example.com" />
+                    <img src="Images/Important.png" id="emailWarning" class="warning warning-hide" height="25" width="25" />
+                </div>
+
+                <!-- Phone -->
+                <div class="field-name-block">
+                    <label class="field-name">Mobile</label>
+                </div>
+                <div class="field-input-block">
+                    <input id="mobile" type="text" placeholder="1234567890" maxlength="10" />
+                    <img src="Images/Important.png" id="mobileWarning" class="warning warning-hide" height="25" width="25" />
+                </div>
+
+
+
+
+
+                <!-- Create Password -->
+                <div class="field-name-block">
+                    <label class="field-name">Create Password</label>
+                </div>
+                <div class="field-input-block">
+                    <input id="createPW" type="password" placeholder="Password" maxlength="30" />
+                    <img src="Images/Important.png" id="pwdWarning" class="warning warning-hide" height="25" width="25" />
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="field-name-block">
+                    <label class="field-name">Confirm Password</label>
+                </div>
+                <div class="field-input-block">
+                    <input id="confirmPW" type="password" placeholder="Password" maxlength="30" />
+                    <img src="Images/Important.png" id="confirmpwdWarning" class="warning warning-hide" height="25" width="25" />
+                </div>
+
+                <!-- Create Favorite Color-->
+                <div class="field-name-block">
+                    <label class="field-name">Favorite Color</label>
+                </div>
+                <div class="field-input-block">
+                    <input type="color" />
+                </div>
+
+                <!-- Create Favorite Sport -->
+                <div class="field-name-block">
+                    <label class="field-name">Favorite Sport</label>
+                </div>
+                <div class="field-input-block">
+                    <input type="text" placeholder="Sports Name" maxlength="30" />
+                </div>
+
+                <!-- Create Favorite Food -->
+                <div class="field-name-block">
+                    <label class="field-name">Favorite Food</label>
+                </div>
+                <div class="field-input-block">
+                    <input type="text" placeholder="Food" maxlength="30" />
+                </div>
+
+                <!-- Create Favorite Beverages -->
+                <div class="field-name-block">
+                    <label class="field-name">Favorite Beverage</label>
+                </div>
+                <div class="field-input-block">
+                    <input type="text" placeholder="Beverage" maxlength="30" />
+                </div>
+
+
+
+                <!-- Create Buttons Block-->
+                <div class="buttons-block">
+                    <input type="button" value="Sign Up" class="button" onclick="onSubmitClick()" />
+                    <input type="reset" value="Cancel" class="button" onclick="onCancelClick()" />
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

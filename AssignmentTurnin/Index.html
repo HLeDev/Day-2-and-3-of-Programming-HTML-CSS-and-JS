@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hung's Assignment 2(Week 10)</title>
+    <link rel="stylesheet" href="Styles.css" />
+    <link rel="stylesheet" href="StylesCenter.css" />
+    <link rel="stylesheet" href="StylesRight.css"/>
+    <script src="JavaScript/Calculation.js"></script>
+    <script src="JavaScript/addHobbies.js"></script>
+    <script src="JavaScript/addGame.js"></script>
+</head>
+<body>
+    <!--create a master class to wrap the entire content-->
+    <div class="wrapper">
+        <!--create a master class to control separate blocks-->
+        <div class="separation">
+            <!--Create a class for left block for calculator-->
+            <div class="left">
+                <!--insert main image for left block under an image holder-->
+                <div class="img_holder">
+                    <img src="Images/Calculator.png" alt="Calculator" width="300" height="300">
+                </div>
+                <!--Create a class to write content about calc block-->
+                <div class="AboutCalc_wrap pb">
+                    <div class="title">
+                        Calculator Assignment
+                    </div>
+                    <div class="AboutCalc">
+                        <ul>
+                            <li>
+                                <!--create class to wrap up lsit items-->
+                                <div class="li_wrap">
+                                    <!--create my bio-->
+                                    <div class="text">
+                                        <em>Welcome to Hung's Caclculator</em> <br />
+
+                                        <br />For this assignment, we will:<br />
+                                        1.  Input 2 numbers <br />
+                                        2.  Find the sum through (Add, Subtract, Multiply, and Delete)<br />
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="numbers_wrap pb">
+                        <div class="title">
+                            <br />
+                            Lets Begin our Calculation!
+                        </div>
+                        <div class="numbers">
+                            <ul>
+                                <li>
+                                    <div class="li_wrap">
+                                        <div class="text">Please enter First Number:</div>
+                                        <input type="text" id="firstNum" />
+                                    </div><br />
+                                </li>
+                                <li>
+                                    <div class="li_wrap">
+                                        <div class="text">Please enter Second Number:</div>
+                                        <input type="text" id="secNum" />
+                                    </div><br />
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="calc_wrap">
+                            <ul>
+                                <li>
+                                    <div class="li_wrap">
+                                        <div class="icon">
+                                            <img src="Images/Add.png" height="50" width="50" onclick="Add()" />
+                                        </div>
+                                        <div class="text">Add</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li_wrap">
+                                        <div class="icon">
+                                            <img src="Images/Subtract.png" height="50" width="50" onclick="Subtract()" />
+                                        </div>
+                                        <div class="text">Subtract</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li_wrap">
+                                        <div class="icon">
+                                            <img src="Images/Multiply.png" height="50" width="50" onclick="Multiply()" />
+                                        </div>
+                                        <div class="text">Multiply</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li_wrap">
+                                        <div class="icon">
+                                            <img src="Images/Divide.png" height="50" width="50" onclick="Divide()" />
+                                        </div>
+                                        <div class="text">Divide</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><br />
+
+                    <div class="SumCalc">
+                        <!--create class to wrap up list items-->
+                        <div class="li_wrap">
+                            <!--create my bio-->
+                            <div class="text">
+                                <em>The answer is:</em>
+                                <div class="text" id="result"></div>
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center">
+                <div class="img_holder">
+                    <img src="Images/Hobbies.png" alt="Hobbies" width="300" height="300" />
+                </div>
+                <div class="AboutYou_wrap pb">
+                    <div class="htitle">
+                        Hobbies Assignment
+                    </div>
+                    <div class="AboutYou">
+                        <ul>
+                            <li>
+                                <div class="li_wrap">
+                                    <div class="text">
+                                        <em>
+                                            I want to know more about you! <br />
+                                            What are you hobbies?
+                                        </em><br />
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="Hobbies_wrap pb">
+                        <div class="title">
+                            <br />Please enter your top 5 hobbies:
+                        </div>
+                        <div class="Hobbies" id="hobbieslst">
+                            <ul>
+                                <li>
+                                    <div class="li_wrap1">
+                                        <div class="icon">
+                                            <img src="Images/AddNew.png" height="50" width="50" id="newHobbybtn" onclick="addEventListener" />
+                                        </div>
+                                        <div class="text">Add New Hobby</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li_wrap2">
+                                        <input type="text" name="hobby" class="hobbiesInput" />
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="hobbyent">
+                            <img src="Images/Enter.png" height="100" width="120" onclick="dispHobbies()" />
+                        </div>
+                        <div class="text">
+                            <br /><em>Your hobbies are:</em>
+                            <div class="text" id="hobresult"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="img_holder">
+                    <img src="Images/Game.png" alt="game" width="300" height="300" />
+                </div>
+                <div class="Game_wrap pb">
+                    <div class="gtitle">
+                        Arrays Assignment
+                    </div>
+                    <div class="Game">
+                        <ul>
+                            <li>
+                                <div class="li_wrap">
+                                    <div class="text">
+                                        <em>
+                                            Lets create a list of favorite Games<br />
+                                        </em><br />
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="Game_wrap pb">
+                        <div class="title">
+                            <br />Please enter your favorite Game:
+                        </div>
+                        <div class="Game">
+                            <ul>
+                                <li>
+                                    <div class="li_wrap">
+                                        Game: <input type="text" id="game" />
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gameent">
+                            <img src="Images/Enter.png" height="100" width="120" onclick="AddGame()" />
+                        </div>
+                        <br /><em>Favorite List:</em><br />
+                        <p id="para"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
